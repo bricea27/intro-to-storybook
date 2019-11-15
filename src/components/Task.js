@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 
 export default function Task({
@@ -24,7 +25,7 @@ export default function Task({
       </div>
       <div className="actions" onClick={event => event.stopPropagation()}>
         {state !== "TASK_ARCHIVED" && (
-          <a href="#" onClick={onPinTask.bind(this, id)}>
+          <a onClick={onPinTask.bind(this, id)}>
             <span className="icon-star" />
           </a>
         )}
